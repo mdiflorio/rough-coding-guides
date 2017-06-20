@@ -43,14 +43,14 @@ A lot of people have different ideas on this, but I prefer to create the design 
 I positioned everything on my screen using flexbox, if you are unfamiliar with flexbox I strongly suggest taking some time to learn what it's about. It will make life much easier to position CSS elements.[What the flexbox?!](https://flexbox.io/), [ A guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 My design so far looks like this 
-![]({{ site.url }}/assets/random-quote-machine/ss1.png){:class="img-responsive"}
+![]({{site.baseurl }}/assets/random-quote-machine/ss1.png){:class="img-responsive"}
 
 
 ## Step 2 - Connect to the API
 This tends to be the most confusing part, the aim is to connect to an API and fetch data which you will be able to use in your webpage. For this project we want to connect to a quote API. Here is a[link](https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?) to one of them, however you can use which ever API you like. 
 
 Note: if you use Google Chrome you can install [JsonView Extension](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) so that when you open a JSON file in the browser you can view the way the data is formatted. This will be helpful when you have to access that data later.[Forgotten how to access objects?](https://www.freecodecamp.com/challenges/accessing-objects-properties-with-the-dot-operator) 
-![]({{ site.url }}/assets/random-quote-machine/ss2.png){:class="img-responsive"} 
+![]({{ site.baseurl }}/assets/random-quote-machine/ss2.png){:class="img-responsive"} 
 
 1. Create some global variables to store your author and quote. 
 2. Set up a getJSON function using the API [link](https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?) and console.log the response from the API. Here is an example of a getJSON request 
@@ -62,7 +62,7 @@ Note: if you use Google Chrome you can install [JsonView Extension](https://chro
    
 4. If you have issues with getJSON, revisit the [getJSON](https://www.freecodecamp.com/challenges/get-json-with-the-jquery-getjson-method) tutorial again to see if you can work it out. 
 5. You should be able to see something like this in the console 
-![]({{ site.url }}/assets/random-quote-machine/ss3.png){:class="img-responsive"}
+![]({{ site.baseurl }}/assets/random-quote-machine/ss3.png){:class="img-responsive"}
 
 ## Step 3 - Connect the Data to HTML
 1. Notice, that we have a plain javascript object from our getJSON request. Now we can access that object just like you would any other javascript object. 
@@ -71,7 +71,7 @@ Note: if you use Google Chrome you can install [JsonView Extension](https://chro
 4. Use .html to modify your text area to display your quote and author, if you're unsure how to do this, revisit the [Convert JSON Data to HTML](https://www.freecodecamp.com/challenges/convert-json-data-to-html) tutorial. 
 5. Call your function 
 6. You should have something like this when the page loads 
-![]({{ site.url }}/assets/random-quote-machine/ss4.png){:class="img-responsive"}
+![]({{site.baseurl }}/assets/random-quote-machine/ss4.png){:class="img-responsive"}
 
 ## Step 4 - Tie up 'Next' Button
 1. Utilise the jQuery ```.click()``` function to add your getQuote function inside. 
@@ -89,6 +89,6 @@ You should now have a functional Random Quote Generator, feel free to improve th
 
 Remember if you are having issues, go through the steps and identify exactly what you are unsure of. Go back through and redo Free Code Camp tutorials and google the issue.
 
-![]({{ site.url }}/assets/random-quote-machine/ss5.png){:class="img-responsive"}
+![]({{ site.baseurl }}/assets/random-quote-machine/ss5.png){:class="img-responsive"}
 
  
