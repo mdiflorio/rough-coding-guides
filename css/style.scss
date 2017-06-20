@@ -1,0 +1,165 @@
+@import "rouge-base16-dark.scss";
+@font-face {
+    font-family: system;
+    font-style: normal;
+    font-weight: 300;
+    color: #37393A;
+    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+html {
+    padding: 0;
+    font-family: 'system';
+    font-weight: lighter;
+    background: #CED0CE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    width: 700px;
+}
+
+header {
+    background: #4c3825;
+    color: white;
+    padding: 2% 0 2% 0;
+}
+
+.title {
+    font-family: 'Walter Turncoat', cursive;
+    text-align: center;
+    margin: 3% 0 3% 0;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 5px;
+    line-height: 25px;
+    text-shadow: -1px -1px 0px #4c3825, 3px 3px 0px #4c3825, 6px 6px 0px #634f3c;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Walter Turncoat', cursive;
+}
+
+.navbar a {
+    margin: 5px 5% 1% 5%;
+    cursor: pointer;
+}
+
+.main {
+    background-color: white;
+    margin-top: 1%;
+    padding: 2% 6% 6% 6%;
+}
+
+.recent-post {
+    line-height: 15px;
+}
+.recent-post hr{
+    opacity: 0.2;
+}
+
+.recent-post a {
+    cursor: pointer;
+}
+
+.date {
+    opacity: 0.6;
+} 
+
+h1 {
+    margin: 15px 0 15px 0;
+    text-align: center;
+    color: #4c3825;
+}
+
+h2 {
+    margin: 15px 0 10px 0;
+        color: #4c3825;
+
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+p {
+    margin: 10px 0 15px 0;
+}
+
+li {
+    margin: 5px 0 0 0;
+}
+
+ul,
+ol {
+    margin: 0;
+}
+
+a {
+    color: #66ADFF;
+    text-decoration: none;
+}
+
+.current {
+    color: #876e56;
+    text-decoration: none;
+}
+
+
+
+code,
+pre {
+    margin-bottom: 30px;
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal;
+    font-size: 14px;
+    color: #222;
+}
+
+code {
+    padding: 0 3px;
+    color: #f2f2f2;
+    background: #303030;
+}
+
+pre {
+    padding: 20px;
+    overflow: auto;
+    color: #f2f2f2;
+    text-shadow: none;
+    background: #303030;
+    border-radius: 5px;
+}
+
+pre code {
+    padding: 0;
+    color: #f2f2f2;
+    background-color: #303030;
+    border: none;
+    border-radius: 5px;
+}
+
+img {
+    max-width: 90%;
+}
+
+.footer {
+    margin: 3% 0 5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foot {
+    margin: 10px;
+    color: #4c3825;
+    cursor: pointer;
+}
+
+.foot:hover {
+    color: #66ADFF;
+}

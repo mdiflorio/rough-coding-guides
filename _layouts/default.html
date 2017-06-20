@@ -1,18 +1,30 @@
 <!DOCTYPE>
 <html>
-    <head>
-        <title>Rough Guides To Coding</title>
-        <link href="https://fonts.googleapis.com/css?family=Raleway:200,400" rel="stylesheet">
-        <link href="{{site.baseurl}}/css/common.css" rel="stylesheet">
-    </head>
+
+<head>
+    <title>Rough Guides To Coding</title>
+    <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
+    <link href="{{site.baseurl}}/css/style.scss" rel="stylesheet">
+    <script src="https://use.fontawesome.com/d75f41fc47.js"></script>
+</head>
+
+<body>
     <header>
         <h1 class='title'>Rough Coding<br></br>Guides</h1>
         {% include nav.html %}
     </header>
-    <body>
+    <div class='main'>
         {{content}}
-    </body>
+    </div>
     <footer>
-
+        <div class='footer'>
+            <div>
+                <a href='https://github.com/mierz00' class='foot'><i class="fa fa-github fa-2x " aria-hidden="true"></i></a>
+                <a href='mailto:mattdiflorio@gmail.com' class='foot'><i class="fa fa-envelope fa-2x " aria-hidden="true"></i></a>
+                <a href='https://www.freecodecamp.com/mierz00' class='foot'><i class="fa fa-free-code-camp fa-2x " aria-hidden="true"></i></a>
+            </div>
+        </div>
     </footer>
+</body>
+
 </html>

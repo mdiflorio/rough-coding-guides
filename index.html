@@ -2,5 +2,15 @@
 layout: default
 ---
 
-<h1>Posts</h1>
-<p>Lots of code</p>
+<h1>Recent Posts</h1>
+
+    {% for post in site.posts limit:5 %}
+        <div class='recent-post'>
+            <hr></hr>
+            <h2><a href="{{site.baseurl}}{{ post.url }}">{{post.title}}</a></h2>
+            <p class='date'>{{ post.date | date: "%-d %B %Y" }}</p>
+            <p class='recent-des'>{{post.meta}}</p>
+            <hr></hr> 
+        </div>
+    {% endfor %} 
+
