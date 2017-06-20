@@ -1,4 +1,4 @@
 
-baseurl: /coding-blog
+baseurl: /rough-coding-guides
 exclude: ['README.md']
 
