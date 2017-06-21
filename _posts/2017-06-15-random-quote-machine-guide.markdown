@@ -15,9 +15,6 @@ Now, this isn’t an in depth tutorial but a guideline which I will outline the 
 
 If you get stuck at any point try to identify what exactly you are stuck on, google it, if that doesn't help take a look at [my code](https://codepen.io/mierz/pen/XMPXMa?editors=0011). Failing that, head over to the freecodecamp chat rooms or send me a message. I have also provided links to relevant information and further reading.
 
-## Why use API's?
-TODO
-
 ## Step 0 - Analyse
 First things first, take a look at [here](https://www.freecodecamp.com/challenges/build-a-random-quote-machine) and [here](https://codepen.io/mierz/pen/XMPXMa) and identify what you will need in the project.
 
@@ -46,7 +43,7 @@ My design so far looks like this
 ![]({{site.baseurl }}/assets/random-quote-machine/ss1.png){:class="img-responsive"}
 
 
-## Step 2 - Connect to the API
+## Step 3 - Connect to the API
 This tends to be the most confusing part, the aim is to connect to an API and fetch data which you will be able to use in your webpage. For this project we want to connect to a quote API. Here is a[link](https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?) to one of them, however you can use which ever API you like. 
 
 Note: if you use Google Chrome you can install [JsonView Extension](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) so that when you open a JSON file in the browser you can view the way the data is formatted. This will be helpful when you have to access that data later.[Forgotten how to access objects?](https://www.freecodecamp.com/challenges/accessing-objects-properties-with-the-dot-operator) 
@@ -64,7 +61,7 @@ Note: if you use Google Chrome you can install [JsonView Extension](https://chro
 5. You should be able to see something like this in the console 
 ![]({{ site.baseurl }}/assets/random-quote-machine/ss3.png){:class="img-responsive"}
 
-## Step 3 - Connect the Data to HTML
+## Step 4 - Connect the Data to HTML
 1. Notice, that we have a plain javascript object from our getJSON request. Now we can access that object just like you would any other javascript object. 
 2. Set up a new function and place the getJSON request inside. We will use this function when the page loads and when the 'next' button is pressed. 
 3. Assign the data from the getJSON request into the two variables author and quote for example: 
@@ -73,18 +70,18 @@ Note: if you use Google Chrome you can install [JsonView Extension](https://chro
 6. You should have something like this when the page loads 
 ![]({{site.baseurl }}/assets/random-quote-machine/ss4.png){:class="img-responsive"}
 
-## Step 4 - Tie up 'Next' Button
+## Step 5 - Tie up 'Next' Button
 1. Utilise the jQuery ```.click()``` function to add your getQuote function inside. 
 2. Now you should be able to click on the 'next' button and a new quote will appear in your div. 
 
-## Step 5 - Tweet Button
+## Step 6 - Tweet Button
 1. Once again use the jQuery ```.click()``` function to add functionality to the tweet button 
 2. In order to open a new window of a link, you can use 
 3. window.open(URL) 
 4. [Click here](https://dev.twitter.com/web/tweet-button/web-intent) to get information and an example of using the Twitter web-intent url 
 5. Utilise your author and quote variables to create a url for the 'tweet' button. 
 
-## Step 6 - Finishing up
+## Step 7 - Finishing up
 You should now have a functional Random Quote Generator, feel free to improve the design and make variations to your code.
 
 Remember if you are having issues, go through the steps and identify exactly what you are unsure of. Go back through and redo Free Code Camp tutorials and google the issue.
