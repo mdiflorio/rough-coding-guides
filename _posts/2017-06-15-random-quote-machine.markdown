@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Random Quote Machine - Guide"
+title:  "Random Quote Machine"
 meta: "Don't know where to start? Use this rough guide to building a Random Quote Machine"
 date:   2017-06-15 15:43:14 +0200
 category: jQuery
@@ -59,6 +59,7 @@ Note: if you use Google Chrome you can install [JsonView Extension](https://chro
    
 4. If you have issues with getJSON, revisit the [getJSON](https://www.freecodecamp.com/challenges/get-json-with-the-jquery-getjson-method) tutorial again to see if you can work it out. 
 5. You should be able to see something like this in the console 
+
 ![]({{ site.baseurl }}/assets/random-quote-machine/ss3.png){:class="img-responsive"}
 
 ## Step 4 - Connect the Data to HTML
@@ -68,6 +69,7 @@ Note: if you use Google Chrome you can install [JsonView Extension](https://chro
 4. Use .html to modify your text area to display your quote and author, if you're unsure how to do this, revisit the [Convert JSON Data to HTML](https://www.freecodecamp.com/challenges/convert-json-data-to-html) tutorial. 
 5. Call your function 
 6. You should have something like this when the page loads 
+
 ![]({{site.baseurl }}/assets/random-quote-machine/ss4.png){:class="img-responsive"}
 
 ## Step 5 - Tie up 'Next' Button

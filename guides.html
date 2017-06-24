@@ -1,19 +1,18 @@
----
-layout: default
+--- 
+layout: default 
 ---
 
 <h1>Guides</h1>
 <h2>Categories</h2>
-<ul>
-{% for category in site.categories %}
-  <h3>{{ category | first }}<h3>
-    <ul>
-    {% for posts in category %}
-      {% for post in posts %}
-        <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
-      {% endfor %}
-    {% endfor %}
-    </ul>
 
-{% endfor %}
+<ul>
+  {% for category in site.categories %}
+  <h3>{{ category | first }}
+    <h3>
+      <ul>
+        {% for posts in category[1] %}
+        <li><a class="post-link" href="{{ posts.url }}">{{ posts.title }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
 </ul>
