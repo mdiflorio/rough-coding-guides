@@ -1,15 +1,9 @@
 @import "rouge-base16-dark.scss";
-@font-face {
-    font-family: system;
-    font-style: normal;
-    font-weight: 300;
-    color: #37393A;
-    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
-}
+
 
 html {
     padding: 0;
-    font-family: 'system';
+    font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
     background: #CED0CE;
     display: flex;
@@ -171,7 +165,9 @@ img {
     }
 
     .title {
-        font-size: 40px;
+        font-size: 30px;
+        line-height: 15px;
+        padding: 20px;
     }
 
     .recent-post {
