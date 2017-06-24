@@ -11,7 +11,7 @@ layout: default
     <h3>
       <ul>
         {% for posts in category[1] %}
-        <li><a class="post-link" href="{{ posts.url }}">{{ posts.title }}</a></li>
+        <li><a href="{{site.baseurl}}{{ posts.url }}">{{ posts.title }}</a></li>
         {% endfor %}
       </ul>
       {% endfor %}
